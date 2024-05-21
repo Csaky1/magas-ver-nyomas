@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasnyomású felülettisztítás országosan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+<style>
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb; 
+}
+</style>
+
+</head>
+<body class="bg-slate-800 font-sans">
+    
+<!--Navbar-->
+
+  <nav class="bg-orange-500 border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://www.facebook.com/people/Magasnyom%C3%A1s%C3%BA-fel%C3%BClettiszt%C3%ADt%C3%A1s-orsz%C3%A1gosan/61556202670429/" target="_blank" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="images/logo.avif" class="h-8 selection:bg-slate-800" alt="Logo" />
+          <span class="self-center md:text-2xl font-semibold whitespace-nowrap text-white selection:bg-slate-800 hover:text-slate-800">Magasnyomású felülettisztítás országosan</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-orange-500">
+          <li>
+            <a href="#sherman" class="block py-2 px-3 text-orange-500 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-800 md:p-0 selection:bg-slate-800" onclick="szolg()">Szolgáltatásaink</a>
+          </li>
+          
+          <li>
+            <a href="#t-34" class="block py-2 px-3 text-orange-500 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-800 md:p-0 selection:bg-slate-800" onclick="araz()">Árazás</a>
+          </li>
+
+          <li>
+            <a href="#default-carousel" class="block py-2 px-3 text-orange-500 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-800 md:p-0 selection:bg-slate-800" onclick="eddig()">Eddigi munkáink</a>
+          </li>
+
+          <li>
+            <a href="#tutel" class="block py-2 px-3 text-orange-500 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-800 md:p-0 selection:bg-slate-800">Elérhetőségek</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Szolgáltatásaink-->
+
+<div class="mt-8 mx-auto rounded-lg bg-orange-500 w-[90%] sm:h-[20rem] md:h-[17.5rem] md:w-[45rem] h-[50rem] border-2 grid sm:grid-cols-4" id="sherman">
+  <div>
+    <img src="images/pw-img.avif" alt="kep" class="w-full selection:bg-slate-800">
+  </div>
+  <div class="sm:col-span-3 text-white selection:bg-slate-800 p-4 text-justify pr-6">
+  <p class="text-xl font-semibold underline underline-offset-4">A tetőtisztításról</p>
+
+    <p class="mt-4">A tetőtisztítás, mint szolgáltatás magasnyomású mosóval történik, melyhez csak vízvételi forrásra van szükségünk (pl. egy kerti-, vagy hálózati csap).</p>
+    
+    <p class="mt-4">Az évek során lerakódott, képződött (pl. moha, alga, füst, por és egyéb) szennyeződések eltávolítására ajánljuk, mivel lényegesen olcsóbb, mint egy komplett tetőcsere.</p>
+  </div></div>
+
+<!--Árazás-->
+
+<div class="mt-8 mx-auto rounded-lg w-[90%] bg-orange-500 sm:h-[15rem] md:h-[12.5rem] h-[17.5rem] border-2 md:w-[45rem] text-white text-justify selection:bg-slate-800" id="t-34">
+  <p class="text-xl font-semibold underline underline-offset-4 ml-4">Árazás</p>
+  <p class="mt-4 mx-6">A tetőtisztítás alapára: 900Ft/m<sup>2</sup>.</p>
+    <p class="mt-4 mx-6">Ez függ a tető kialakításától, méretétől, szennyezettségétől, ezért minden esetben előzetes helyszíni felmérés szükséges.</p>
+</div>
+ 
+<!--Eddigi munkáink-->
+
+<div id="default-carousel" class="relative w-[90%] md:w-[45rem] mx-auto mt-8 selection:bg-slate-800" data-carousel="slide">
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-1.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-2.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-3.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-4.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/img-5.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only"></span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only"></span>
+      </span>
+  </button>
+</div>
+
+<!--Elérhetőségek-->
+
+<div class="w-full bg-black h-[12.5rem] mt-8 text-white selection:bg-slate-800" id="tutel">
+  <p class="mx-auto mt-4 pt-4 pl-4">
+    Telefonszám: (30) 687 2162
+  </p>
+  <p class="mx-auto mt-4 pl-4">
+    Email: Mfelulettisztitas88@gmail.com
+  </p>
+</div>
+
+<script> 
+  function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function szolg() {
+  document.getElementById("sherman").style.backgroundColor = "lightblue";
+  sleep(400).then(() => { document.getElementById("sherman").style.backgroundColor = "#f97316";});
+}
+function araz() {
+  document.getElementById("t-34").style.backgroundColor = "lightblue";
+  sleep(400).then(() => { document.getElementById("t-34").style.backgroundColor = "#f97316";});
+}
+function eddig() {
+  document.getElementById("default-carousel").style.border = "1px solid lightblue";
+  sleep(400).then(() => { document.getElementById("default-carousel").style.border = "none";});
+}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
